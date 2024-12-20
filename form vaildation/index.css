@@ -1,0 +1,119 @@
+/* General Form Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171718;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf7e0X5-lkm-P4piat5RyyImyG9CYGesbDvQ&s");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container {
+    background-color: rgb(35, 33, 33);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for form container */
+.form-container:hover {
+    transform: scale(1.07); /* Slight zoom effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Deep shadow for emphasis */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for input fields */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Subtle green glow */
+}
+
+/* Focus effect for input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.6); /* Green glow effect */
+}
+
+/* Hover effect for the submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for button */
+button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Button raises slightly */
+}
+
+/* Button active state (clicked effect) */
+button[type="submit"]:active {
+    transform: translateY(1px); /* Button goes down when clicked */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red;
+    font-size: 12px;
+    visibility: hidden; /* Initially hidden */
+    transition: visibility 0.3s ease;
+}
+
+/* Error message shown with smooth transition */
+.error-message.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
