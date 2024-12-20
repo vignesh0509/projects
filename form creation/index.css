@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 90px;
+    background-color: rgb(122, 240, 240);
+    padding: 5px;
+    text-align: center;
+    color: brown;
+}
+
+h2 {
+    font-size: 40px;
+    background-color: rgb(122, 205, 205);
+    text-align: center;
+}
+
+body {
+    background-image: url(./bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    background-color: blueviolet;
+    border-style: solid;
+    border-color: bisque;
+    text-align: center;
+}
+
+#personal {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#personal input {
+    font-size: 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    margin-left: 30px;
+
+}
+
+#gender {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#gender input {
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+#contact {
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+#contact input {
+    font-size: 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+#pic {
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+#pic input {
+    font-size: 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+#education {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#education input {
+    font-size: 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+#course {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#course input {
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#btn1 {
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    border-radius: 10px;
+    border-color: aqua;
+    margin-left: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+#btn2 {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: aqua;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+}

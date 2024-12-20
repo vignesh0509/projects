@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+</head>
+<link rel="stylesheet" href="./index.css">
+
+<body>
+    <H1>Magic Bus India Foundation</H1>
+
+
+    <form action="/submit_student_info" method="post">
+        <h2>STUDENT INFORMATION FORM</h2><br>
+
+        <!-- Personal Details Section -->
+        <div id="personal">
+            <label for="roll_number">Roll Number:</label><br>
+            <input type="text" id="roll_number" name="roll_number" placeholder="Enter your roll number"><br><br>
+
+            <label for="aadhaar">Aadhaar Card Number:</label><br>
+            <input type="text" id="aadhaar" name="aadhaar" placeholder="Enter your Aadhaar number"><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+        </div>
+
+        <div id="gender">
+            <p>Gender:</p>
+            
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br><br>
+        </div>
+        <div id="contact">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+        </div>
+        <div id="pic">
+            <br>
+            <label for="profile_pic">Upload Profile Picture:</label><br>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*"><br><br>
+        </div>
+
+        <!-- Academic Details Section -->
+
+        <div id="education">
+            <label for="college_name">College Name:</label><br>
+            <input type="text" id="college_name" name="college_name" placeholder="Enter your college name"><br><br>
+
+            <label for="stream">Stream:</label><br>
+            <input type="text" id="stream" name="stream"
+                placeholder="Enter your stream (e.g., Computer Science)"><br><br>
+
+            <label for="degree">Degree:</label><br>
+            <input type="text" id="degree" name="degree" placeholder="Enter your degree (e.g., B.Tech, B.Sc)"><br><br>
+
+            <label for="year_of_study">Year of Study:</label><br>
+            <input type="number" id="year_of_study" name="year_of_study" min="1" max="4"
+                placeholder="Enter your year of study"><br><br>
+        </div>
+        <!-- Courses -->
+        <div id="course">
+            <p>Courses Interested In:</p><br>
+            <input type="checkbox" id="Web Design" name="courses" value="Web Design">
+            <label for="Web Design">Web Design</label>
+            <input type="checkbox" id="web Development" name="courses" value="web Development">
+            <label for="web Development">web Development</label>
+            <input type="checkbox" id="AWS" name="courses" value="AWS">
+            <label for="AWS">AWS</label>
+        </div>
+        <br> <br> <br> <br>
+        <!-- Buttons -->
+        <div id="button">
+            <button id="btn1" type="submit">Submit</button>
+            <button id="btn2" type="reset">Reset</button>
+        </div>
+
+    </form>
+</body>
+<footer>
+    <p>&copy; 2024</p>
+</footer>
+
+</html>
