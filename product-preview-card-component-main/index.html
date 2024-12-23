@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 700px) {
+      body {
+        background-color: hsl(30, 38%, 92%);
+        justify-items: center;
+        font-size: 14px;
+      }
+
+      #container {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        width: 340px;
+        height: 660px;
+      }
+
+      #perfume-img {
+        display: none;
+      }
+
+      #con-1 {
+        background-image: url("./images/image-product-mobile.jpg");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 290px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #con-2 {
+        display: grid;
+        padding: 20px;
+
+        grid-row-gap: 15px;
+      }
+
+      button {
+        height: 50px;
+      }
+
+      .text-1 {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 33px;
+      }
+
+      #line {
+        line-height: 30px;
+        color: black;
+      }
+
+      #line2 {
+        line-height: 20px;
+      }
+
+      #price-strick {
+        margin-top: 10px;
+        margin-left: 15px;
+        text-decoration: line-through;
+      }
+    }
+
+    @media screen and (min-width: 701px) {
+      body {
+        background-color: hsl(30, 38%, 92%);
+        justify-items: center;
+        font-size: 17px;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 780px;
+        height: 585px;
+      }
+
+      #con-2 {
+        display: grid;
+        padding: 50px;
+      }
+
+      .text-1 {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        font-size: 40px;
+      }
+
+      #line {
+        line-height: 40px;
+        color: black;
+      }
+
+      #line2 {
+        line-height: 30px;
+      }
+
+      #price-strick {
+        margin-top: 15px;
+        margin-left: 20px;
+        text-decoration: line-through;
+      }
+
+    }
+
+    #container {
+      margin-top: 200px;
+      background-color: white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      border-radius: 15px;
+      color: hsl(158, 36%, 37%);
+      margin-bottom: 50px;
+    }
+
+    #perfume-img {
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    button {
+      background-color: hsl(158, 36%, 37%);
+      border-radius: 15px;
+      border: 0px;
+      word-spacing: 2px;
+      color: white;
+      font-size: 18px;
+    }
+
+    .price {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #per {
+      font-family: 700;
+      letter-spacing: 6px;
+    }
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="con-1">
+      <img src="./images/image-product-desktop.jpg" alt="Perfume-img" id="perfume-img">
+    </div>
+    <div id="con-2">
+      <div id="per">PERFUME</div>
+      <div class="text-1" id="line"> Gabrielle Essence Eau De Parfum</div>
+      <div id="line2">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</div>
+      <div class="price">
+        <div class="text-1">$149.99</div>
+        <div id="price-strick">$169.99</div>
+      </div>
+      <button><img src="./images/icon-cart.svg" alt="cart-logo"> Add to Cart</button>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">  M Vignesh </a>.
+  </div>
+</body>
+
+</html>
