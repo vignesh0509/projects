@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#donate"><button class="btn">DONATE</button></a>
+
+
+        </div>
+    </header>
+
+    <!-- Home section -->
+    <section id="home">
+        <div class="headtext">
+            <h2 class="topic">Turning Caps into a Force for Good</h2>
+            <p class="homepara">
+                "At Anticaps, we turn small contributions into big impacts. Donate your unused caps to support
+                sustainability, empower communities, and make a positive difference. Together, let’s create a force for
+                good."
+            </p>
+        </div>
+        <div class="images">
+            <img src="home.avif" alt="" class="homeimg">
+        </div>
+
+
+
+    </section>
+
+    <!-- About section -->
+
+    <section id="about">
+
+        <div class="aboutimg">
+            <img src="./pexels-marcus-aurelius-4064229.jpg" alt="" class="mid">
+            <img src="helping.webp" alt="" class="tside">
+            <img src="./pexels-rdne-6646916.jpg" alt="" class="bside">
+        </div>
+        <h1>ABOUT</h1>
+        <p class="abouttext">At Anticaps, we are driven by the belief that even the smallest contributions can spark
+            significant change. Every cap you donate is more than just a piece of plastic—it’s a step toward a cleaner
+            planet and a stronger community. Our mission is to reduce plastic waste by transforming unused caps into
+            resources that fuel sustainable projects and empower underprivileged communities.
+
+            Through innovative recycling initiatives, we aim to create a greener future while supporting programs that
+            bring education, healthcare, and opportunities to those in need. By choosing to donate your caps, you’re not
+            just recycling—you’re joining a movement that values sustainability, compassion, and collective action.
+
+            Together, let’s turn everyday waste into a force for good and make a lasting impact on both the environment
+            and lives around us. Join us on this journey to build a brighter, more sustainable tomorrow!
+            <span>SeeMore...</span>
+        </p>
+
+    </section>
+
+    <!-- services section -->
+
+    <section id="service">
+        <h1>SERVICES</h1>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Free Eduction</h5>
+                <img src="education.avif" alt="pic1" class="cardimg">
+                <p class="card-text">Some quick example text to build on the card title and mak
+                    it support the main title.</p>
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Free Foods</h5>
+                <img src="food.webp" alt="pic2" class="cardimg">
+                <p class="card-text">Some quick example text to build on the card title and mak
+                    it support the main title.</p>
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Free Health</h5>
+                <img src="health.avif" alt="pic3" class="cardimg">
+                <p class="card-text">Some quick example text to build on the card title and mak
+                    it support the main title.</p>
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Jobs Offer</h5>
+                <img src="service 1" alt="pic3" class="cardimg">
+                <p class="card-text">Some quick example text to build on the card title and mak
+                    it support the main title.</p>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- donate section -->
+
+    <section id="donate">
+        <h1>Donate</h1>
+        <form class="donate-form" action="/submit-donate" method="POST">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter your Amount" required><br>
+    
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    
+            <label for="phone">Phone Number : </label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+    
+           <button type="submit">Make a Gift</button>
+        </form>
+
+ 
+
+    </section>
+
+    <!-- Contact section -->
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+
+        <div class="con">
+        <div class="con_img">
+            <img src="pexels-marcus-aurelius-4064229.jpg" alt="">
+            <p>We'd love to hear from you! Whether you have a question, want to collaborate, or need support, our team at Anticaps Web Suites is here to assist.</p>
+        </div>
+        <form class="contact-form" action="/submit-contact" method="POST">
+           
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </section>
+
+
+
+</body>
+
+</html>
